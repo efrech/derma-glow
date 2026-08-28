@@ -44,6 +44,12 @@ fbq('track','PageView');
   .wa:hover{background:var(--wa-d);transform:translateY(-2px)}
   .wa svg{width:24px;height:24px;fill:#fff;flex:none}
   .wa-note{display:block;margin-top:10px;font-size:.86rem;color:var(--muted)}
+  .promo-strip{background:var(--ink);color:#fff;text-align:center;font-size:.82rem;padding:9px 16px;font-weight:500}
+  .promo-strip b{color:var(--mint)}
+  .price-anchor{display:inline-flex;align-items:baseline;gap:10px;margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:100px;padding:8px 18px}
+  .price-anchor s{color:var(--muted);font-weight:600;font-size:1.05rem}
+  .price-anchor b{color:var(--mint-d);font-size:1.55rem;font-weight:900}
+  .price-anchor span{color:var(--muted);font-weight:500;font-size:.85rem}
 
   /* HEADER sin menú */
   header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
@@ -173,6 +179,8 @@ fbq('track','PageView');
 </head>
 <body>
 
+<div class="promo-strip">🗓️ <b>Septiembre:</b> consulta de evaluación <b>GRATIS</b> (antes $50) · cupos limitados</div>
+
 <header>
   <div class="wrap bar">
     <div class="brand"><span class="mk">CDCC</span><span>Centro de Dermatología<small>y Cirugía Cosmética</small></span></div>
@@ -188,14 +196,15 @@ fbq('track','PageView');
   <div class="wrap hero-in">
     <div>
       <span class="tag">🔬 Detección temprana de cáncer de piel</span>
-      <h1>Una evaluación a tiempo <span class="hl">puede hacer la diferencia.</span></h1>
-      <p class="sub">¿Tienes una mancha, lunar o lesión en la piel que ha cambiado? Consulta con nuestros especialistas y dale a tu piel la atención que merece.</p>
+      <h1>Consulta dermatológica <span class="hl">GRATIS</span> para revisar tus lunares y manchas</h1>
+      <p class="sub">Una evaluación a tiempo puede hacer la diferencia. Tu consulta es <b>gratis</b> (antes $50) y, si necesitas biopsia, tienes <b>50% de descuento</b>.</p>
+      <div class="price-anchor"><s>$50</s> <b>GRATIS</b> <span>en septiembre</span></div>
       <div class="cta">
         <a class="wa" href="https://wa.me/10000000000?text=Hola,%20quiero%20agendar%20mi%20evaluaci%C3%B3n%20dermatol%C3%B3gica%20GRATIS%20de%20septiembre." target="_blank" rel="noopener" onclick="fbq('track','Contact')">
           <svg viewBox="0 0 32 32"><path d="M16.02 3.2c-7.05 0-12.78 5.73-12.78 12.78 0 2.25.59 4.45 1.71 6.39L3.2 28.8l6.6-1.73c1.87 1.02 3.98 1.56 6.13 1.56 7.05 0 12.78-5.73 12.78-12.78 0-3.42-1.33-6.63-3.75-9.05a12.7 12.7 0 00-9.05-3.6zm5.83 15.43c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.72.16-.21.32-.82 1.04-1.01 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.89-1.78-2.21-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.99-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.66 0 1.57 1.14 3.08 1.3 3.29.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.89-.77 2.16-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37z"/></svg>
-          Agenda tu evaluación por WhatsApp
+          Agendar GRATIS por WhatsApp
         </a>
-        <span class="wa-note">Consulta GRATIS en septiembre · Respuesta inmediata</span>
+        <span class="wa-note">⚡ Respuesta inmediata · ✅ Sin compromiso · 🔒 Cupos limitados</span>
       </div>
       <div class="hstat">
         <span>🩺 <b>+15 años</b> tratando cáncer de piel</span>
@@ -235,38 +244,6 @@ fbq('track','PageView');
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ABCDE -->
-<section style="background:var(--gray)">
-  <div class="wrap center">
-    <span class="eyebrow">Aprende a revisarte</span>
-    <h2 class="sec-title">Regla ABCDE: cuándo vigilar un lunar</h2>
-    <p class="sec-sub">Si un lunar o mancha cumple una o más de estas señales, es momento de una evaluación.</p>
-    <div class="abcde">
-      <div class="ab"><div class="l">A</div><b>Asimetría</b><small>Una mitad distinta a la otra</small></div>
-      <div class="ab"><div class="l">B</div><b>Bordes</b><small>Irregulares o mal definidos</small></div>
-      <div class="ab"><div class="l">C</div><b>Color</b><small>Varios tonos o desigual</small></div>
-      <div class="ab"><div class="l">D</div><b>Diámetro</b><small>Mayor a 6 mm</small></div>
-      <div class="ab"><div class="l">E</div><b>Evolución</b><small>Cambia con el tiempo</small></div>
-    </div>
-  </div>
-</section>
-
-<!-- PARA TI SI -->
-<section>
-  <div class="wrap center">
-    <span class="eyebrow">Esta evaluación es para ti si notas</span>
-    <h2 class="sec-title">Señales que no debes ignorar</h2>
-    <ul class="signs">
-      <li><span class="d"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Una mancha o lunar <b>nuevo</b> o que cambió de forma</li>
-      <li><span class="d"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Lesiones que <b>sangran</b>, pican o duelen</li>
-      <li><span class="d"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Heridas que <b>no cicatrizan</b> en semanas</li>
-      <li><span class="d"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Un lunar que <b>creció</b> o cambió de color</li>
-      <li><span class="d"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Manchas ásperas o descamadas que persisten</li>
-      <li><span class="d"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Antecedentes de <b>exposición solar</b> o casos en la familia</li>
-    </ul>
   </div>
 </section>
 
@@ -331,6 +308,29 @@ fbq('track','PageView');
   </div>
 </section>
 
+<!-- EDUCACIÓN (condensada, más abajo en el embudo) -->
+<section style="background:var(--gray)">
+  <div class="wrap center">
+    <span class="eyebrow">¿Cuándo revisarte?</span>
+    <h2 class="sec-title">Vigila estas señales — regla ABCDE</h2>
+    <p class="sec-sub">Si un lunar o mancha cumple una o más, es momento de tu evaluación gratuita.</p>
+    <div class="abcde">
+      <div class="ab"><div class="l">A</div><b>Asimetría</b><small>Una mitad distinta</small></div>
+      <div class="ab"><div class="l">B</div><b>Bordes</b><small>Irregulares</small></div>
+      <div class="ab"><div class="l">C</div><b>Color</b><small>Varios tonos</small></div>
+      <div class="ab"><div class="l">D</div><b>Diámetro</b><small>Mayor a 6 mm</small></div>
+      <div class="ab"><div class="l">E</div><b>Evolución</b><small>Cambia con el tiempo</small></div>
+    </div>
+    <p style="margin:18px auto 0;color:var(--muted);max-width:58ch">También revísate si tienes lesiones que <b>sangran, crecen, cambian de color o no cicatrizan</b>.</p>
+    <div style="margin-top:24px">
+      <a class="wa" href="https://wa.me/10000000000?text=Hola,%20quiero%20mi%20evaluaci%C3%B3n%20dermatol%C3%B3gica%20GRATIS%20de%20septiembre." target="_blank" rel="noopener" onclick="fbq('track','Contact')">
+        <svg viewBox="0 0 32 32"><path d="M16.02 3.2c-7.05 0-12.78 5.73-12.78 12.78 0 2.25.59 4.45 1.71 6.39L3.2 28.8l6.6-1.73c1.87 1.02 3.98 1.56 6.13 1.56 7.05 0 12.78-5.73 12.78-12.78 0-3.42-1.33-6.63-3.75-9.05a12.7 12.7 0 00-9.05-3.6zm5.83 15.43c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.72.16-.21.32-.82 1.04-1.01 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.89-1.78-2.21-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.99-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.66 0 1.57 1.14 3.08 1.3 3.29.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.89-.77 2.16-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37z"/></svg>
+        Agendar mi evaluación GRATIS
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- URGENCIA -->
 <section>
   <div class="wrap">
@@ -369,7 +369,7 @@ fbq('track','PageView');
       <p>Agenda tu evaluación dermatológica gratuita de septiembre. Escríbenos por WhatsApp ahora.</p>
       <a class="wa" href="https://wa.me/10000000000?text=Hola,%20quiero%20agendar%20mi%20evaluaci%C3%B3n%20dermatol%C3%B3gica%20GRATIS%20de%20septiembre." target="_blank" rel="noopener" onclick="fbq('track','Contact')">
         <svg viewBox="0 0 32 32"><path d="M16.02 3.2c-7.05 0-12.78 5.73-12.78 12.78 0 2.25.59 4.45 1.71 6.39L3.2 28.8l6.6-1.73c1.87 1.02 3.98 1.56 6.13 1.56 7.05 0 12.78-5.73 12.78-12.78 0-3.42-1.33-6.63-3.75-9.05a12.7 12.7 0 00-9.05-3.6zm5.83 15.43c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.72.16-.21.32-.82 1.04-1.01 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.89-1.78-2.21-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.99-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.66 0 1.57 1.14 3.08 1.3 3.29.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.89-.77 2.16-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37z"/></svg>
-        Agenda tu evaluación por WhatsApp
+        Agendar GRATIS por WhatsApp
       </a>
     </div>
   </div>
