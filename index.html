@@ -3,260 +3,331 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Derma Glow — Consulta dermatológica con 40% OFF | Piel sana y radiante</title>
-<meta name="description" content="Agenda tu consulta dermatológica con diagnóstico de piel y plan personalizado. Este mes 40% de descuento. Dermatólogos certificados. Escríbenos por WhatsApp.">
-<meta property="og:title" content="Piel sana y radiante — 40% OFF en tu primera consulta">
-<meta property="og:description" content="Diagnóstico de piel + plan personalizado con dermatólogos certificados. Cupos limitados.">
+<title>CDCC — Evaluación de cáncer de piel · Consulta GRATIS en septiembre</title>
+<meta name="description" content="¿Tienes una mancha, lunar o lesión en la piel que ha cambiado? Consulta dermatológica GRATIS este septiembre + 50% en biopsia e histopatología. Agenda por WhatsApp.">
+<meta property="og:title" content="Una evaluación a tiempo puede hacer la diferencia">
+<meta property="og:description" content="Consulta dermatológica GRATIS en septiembre para evaluar lesiones sospechosas de cáncer de piel. Agenda por WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- ============================================================= -->
+<!-- META PIXEL — reemplaza TU_PIXEL_ID por el ID real de la cuenta -->
+<!-- ============================================================= -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','TU_PIXEL_ID');
+fbq('track','PageView');
+</script>
+
 <style>
   :root{
-    --ink:#2b2622; --brand:#0f9d8f; --brand-d:#0b7d72; --rose:#e79a90; --rose-s:#fbeae6;
-    --cream:#fbf8f4; --soft:#f2ede7; --line:#ece5dc; --muted:#7c736a; --wa:#25d366; --wa-d:#1da851;
+    --ink:#141618; --blue:#b7d3e9; --blue-d:#37729b; --blue-dd:#245277;
+    --mint:#c7ead1; --mint-d:#4f9d73; --gray:#f5f5f5; --line:#e7ebee;
+    --muted:#697077; --paper:#ffffff; --wa:#25d366; --wa-d:#1da851;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{background:var(--cream);color:var(--ink);font-family:'Poppins',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
-  h1,h2,h3{line-height:1.15;font-weight:700}
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{line-height:1.16;font-weight:800;letter-spacing:-.01em}
   img{max-width:100%;display:block}
   .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
   .center{text-align:center}
 
-  /* WhatsApp buttons — the single action */
-  .wa{display:inline-flex;align-items:center;gap:11px;background:var(--wa);color:#fff;font-weight:700;font-size:1.06rem;
+  /* WhatsApp — única acción */
+  .wa{display:inline-flex;align-items:center;gap:11px;background:var(--wa);color:#fff;font-weight:700;font-size:1.04rem;
     padding:16px 26px;border-radius:100px;box-shadow:0 12px 26px rgba(37,211,102,.32);transition:.2s;text-decoration:none;border:0;cursor:pointer}
   .wa:hover{background:var(--wa-d);transform:translateY(-2px)}
   .wa svg{width:24px;height:24px;fill:#fff;flex:none}
   .wa-note{display:block;margin-top:10px;font-size:.86rem;color:var(--muted)}
 
-  /* HEADER — no nav menu, just brand + one action */
-  header{position:sticky;top:0;z-index:40;background:rgba(251,248,244,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  /* HEADER sin menú */
+  header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   .bar{display:flex;align-items:center;justify-content:space-between;height:66px}
-  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.25rem;letter-spacing:-.01em}
-  .brand .dot{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--brand),var(--rose));display:grid;place-items:center;color:#fff;font-size:1rem}
-  .brand span{color:var(--brand)}
-  .bar .wa{padding:10px 18px;font-size:.92rem}
-  .bar .wa .t{display:inline}
-  @media(max-width:520px){.bar .wa .t{display:none}.bar .wa{padding:11px 13px}}
+  .brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:1.05rem;line-height:1.1}
+  .brand .mk{width:40px;height:40px;border-radius:11px;background:linear-gradient(135deg,var(--blue-d),var(--mint-d));display:grid;place-items:center;color:#fff;font-weight:900;font-size:.8rem;letter-spacing:.02em;flex:none}
+  .brand small{display:block;font-weight:500;font-size:.72rem;color:var(--muted)}
+  .bar .wa{padding:10px 18px;font-size:.9rem}
+  @media(max-width:540px){.bar .wa .t{display:none}.bar .wa{padding:11px 13px}.brand small{display:none}}
 
   /* HERO */
-  .hero{padding:34px 0 44px;background:radial-gradient(680px 380px at 80% 0,var(--rose-s),transparent 70%)}
-  .hero-grid{display:grid;gap:26px;align-items:center}
-  .pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);color:var(--brand-d);
-    font-weight:600;font-size:.82rem;padding:7px 14px;border-radius:100px}
-  .hero h1{font-size:clamp(2rem,7vw,3.15rem);margin:16px 0 14px}
-  .hero h1 .hl{color:var(--brand)}
-  .hero .sub{font-size:1.12rem;color:#4a443d;max-width:36ch}
+  .hero{background:linear-gradient(180deg,#eef6fb 0%,#f4f9f4 60%,#fff 100%);position:relative;overflow:hidden}
+  .hero-in{padding:34px 0 44px;display:grid;gap:26px;align-items:center}
+  .tag{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);color:var(--blue-dd);
+    font-weight:700;font-size:.8rem;padding:7px 14px;border-radius:100px}
+  .hero h1{font-size:clamp(1.9rem,6.4vw,3rem);margin:16px 0 14px}
+  .hero h1 .hl{color:var(--blue-d)}
+  .hero .sub{font-size:1.1rem;color:#3c4348;max-width:40ch}
   .hero .cta{margin-top:24px}
-  .trust{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:26px;font-size:.86rem;color:var(--muted);font-weight:500}
-  .trust b{color:var(--ink)}
-  .hero-img{border-radius:22px;overflow:hidden;box-shadow:0 30px 60px rgba(43,38,34,.18);aspect-ratio:4/3;position:relative}
+  .hstat{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;font-size:.88rem;color:var(--muted);font-weight:500}
+  .hstat b{color:var(--ink);font-size:1.06rem}
+  .hero-img{border-radius:22px;overflow:hidden;box-shadow:0 26px 54px rgba(20,22,24,.16);aspect-ratio:4/3;position:relative;background:var(--gray)}
   .hero-img img{width:100%;height:100%;object-fit:cover}
-  .hero-tag{position:absolute;left:14px;bottom:14px;background:rgba(255,255,255,.94);border-radius:14px;padding:10px 14px;font-weight:700;font-size:.9rem;box-shadow:0 10px 24px rgba(0,0,0,.14)}
-  .hero-tag small{display:block;color:var(--muted);font-weight:500;font-size:.76rem}
-  @media(min-width:860px){
-    .hero{padding:56px 0 66px}
-    .hero-grid{grid-template-columns:1.05fr .95fr;gap:46px}
-    .hero-img{aspect-ratio:3/4;max-height:560px}
-  }
+  .hero-badge{position:absolute;left:14px;bottom:14px;background:rgba(255,255,255,.95);border-radius:14px;padding:10px 14px;font-weight:800;font-size:.92rem;color:var(--mint-d);box-shadow:0 10px 24px rgba(0,0,0,.14)}
+  .hero-badge small{display:block;color:var(--muted);font-weight:500;font-size:.74rem}
+  @media(min-width:880px){.hero-in{grid-template-columns:1.08fr .92fr;gap:46px;padding:56px 0 64px}.hero-img{aspect-ratio:3/4;max-height:540px}}
 
-  /* generic section */
-  section{padding:56px 0}
-  .eyebrow{display:inline-block;color:var(--rose);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
-  .sec-title{font-size:clamp(1.6rem,4.6vw,2.3rem);margin:10px 0 12px}
-  .sec-sub{color:var(--muted);max-width:52ch;margin:0 auto}
+  section{padding:54px 0}
+  .eyebrow{display:inline-block;color:var(--mint-d);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.76rem}
+  .sec-title{font-size:clamp(1.55rem,4.4vw,2.25rem);margin:10px 0 12px}
+  .sec-sub{color:var(--muted);max-width:56ch;margin:0 auto}
 
-  /* PROMO / offer card */
-  .promo{background:var(--ink);color:#fff;border-radius:26px;padding:34px 26px;position:relative;overflow:hidden}
-  .promo::after{content:"";position:absolute;right:-70px;top:-70px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(231,154,144,.4),transparent 70%)}
-  .promo .flag{display:inline-block;background:var(--rose);color:#3a1f1b;font-weight:800;font-size:.8rem;letter-spacing:.06em;padding:6px 14px;border-radius:100px}
-  .promo h2{font-size:clamp(1.7rem,5vw,2.4rem);margin:14px 0 6px}
-  .promo .price{font-size:1.05rem;margin:8px 0 20px;color:#e9e2da}
-  .promo .price s{color:#9a9089;margin-right:10px}
-  .promo .price b{color:#fff;font-size:1.5rem}
-  .incl{list-style:none;display:grid;gap:12px;margin:8px 0 24px}
-  .incl li{display:flex;gap:12px;align-items:flex-start;color:#efe9e2}
-  .incl .ck{flex:none;width:24px;height:24px;border-radius:50%;background:var(--brand);display:grid;place-items:center}
+  /* OFERTA */
+  .offer{background:var(--ink);color:#fff;border-radius:24px;padding:34px 26px;position:relative;overflow:hidden}
+  .offer::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(183,211,233,.35),transparent 70%)}
+  .offer .flag{display:inline-block;background:var(--mint);color:#123a24;font-weight:800;font-size:.78rem;letter-spacing:.05em;padding:6px 14px;border-radius:100px}
+  .offer h2{font-size:clamp(1.5rem,4.6vw,2.15rem);margin:14px 0 6px;color:#fff}
+  .offer .free{font-size:1.6rem;font-weight:900;color:#fff;margin:6px 0 2px}
+  .offer .free s{color:#8b929a;font-size:1rem;font-weight:600;margin-right:10px}
+  .incl{list-style:none;display:grid;gap:12px;margin:18px 0 22px}
+  .incl li{display:flex;gap:12px;align-items:flex-start;color:#e9edf1}
+  .incl .ck{flex:none;width:24px;height:24px;border-radius:50%;background:var(--mint-d);display:grid;place-items:center}
   .incl .ck svg{width:14px;height:14px;fill:none;stroke:#fff;stroke-width:3}
-  .promo .urg{margin-top:16px;font-size:.9rem;color:#f2c9c2;font-weight:600}
-  @media(min-width:820px){.promo{padding:44px 46px}.promo-in{max-width:none;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}}
+  .offer .fine{font-size:.82rem;color:#9aa1a8;margin-top:8px}
+  .offer .urg{margin-top:14px;font-size:.92rem;color:#bfe0cd;font-weight:700}
+  @media(min-width:820px){.offer{padding:44px 46px}.offer-in{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}}
 
-  /* pain grid */
-  .pain{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:32px}
-  .pain .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 16px;text-align:center;font-weight:600}
-  .pain .ico{width:48px;height:48px;margin:0 auto 10px;border-radius:14px;background:var(--rose-s);display:grid;place-items:center}
-  .pain .ico svg{width:24px;height:24px;stroke:var(--brand);fill:none;stroke-width:1.8}
-  .pain small{display:block;color:var(--muted);font-weight:500;font-size:.82rem;margin-top:3px}
-  @media(min-width:760px){.pain{grid-template-columns:repeat(3,1fr);gap:18px}}
+  /* ABCDE */
+  .abcde{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}
+  .ab{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 16px;text-align:center}
+  .ab .l{width:52px;height:52px;margin:0 auto 10px;border-radius:14px;background:var(--blue);color:var(--blue-dd);display:grid;place-items:center;font-weight:900;font-size:1.5rem}
+  .ab b{display:block;font-size:1rem}
+  .ab small{color:var(--muted);font-size:.83rem}
+  @media(min-width:820px){.abcde{grid-template-columns:repeat(5,1fr);gap:16px}}
 
-  /* split (why us / treatments) */
+  /* señales / para ti */
+  .signs{display:grid;grid-template-columns:1fr;gap:12px;margin-top:26px;max-width:720px;margin-left:auto;margin-right:auto;text-align:left}
+  .signs li{list-style:none;display:flex;gap:12px;align-items:flex-start;background:var(--gray);border-radius:12px;padding:14px 16px;font-weight:500}
+  .signs .d{flex:none;width:22px;height:22px;border-radius:50%;background:var(--mint-d);display:grid;place-items:center;margin-top:1px}
+  .signs .d svg{width:12px;height:12px;fill:none;stroke:#fff;stroke-width:3}
+  @media(min-width:720px){.signs{grid-template-columns:1fr 1fr}}
+
+  /* split */
   .split{display:grid;gap:26px;align-items:center}
-  .split img{border-radius:20px;box-shadow:0 22px 44px rgba(43,38,34,.16);width:100%;aspect-ratio:4/3;object-fit:cover}
+  .split img{border-radius:20px;box-shadow:0 20px 40px rgba(20,22,24,.14);width:100%;aspect-ratio:4/3;object-fit:cover}
   .feat{list-style:none;display:grid;gap:16px;margin-top:18px}
   .feat li{display:flex;gap:14px;align-items:flex-start}
-  .feat .n{flex:none;width:40px;height:40px;border-radius:12px;background:var(--brand);color:#fff;display:grid;place-items:center;font-weight:700}
+  .feat .n{flex:none;width:40px;height:40px;border-radius:12px;background:var(--blue-d);color:#fff;display:grid;place-items:center;font-weight:800}
   .feat h3{font-size:1.05rem}
   .feat p{color:var(--muted);font-size:.92rem}
-  @media(min-width:820px){.split{grid-template-columns:1fr 1fr;gap:48px}.split.rev .img-col{order:2}}
+  @media(min-width:840px){.split{grid-template-columns:1fr 1fr;gap:46px}.split.rev .img-col{order:2}}
 
-  /* testimonials */
-  .tgrid{display:grid;gap:16px;margin-top:32px}
-  .tcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}
-  .stars{color:var(--rose);letter-spacing:2px;margin-bottom:10px}
-  .tcard p{font-size:.98rem}
+  /* proceso */
+  .steps{display:grid;gap:16px;margin-top:30px}
+  .step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;gap:16px;align-items:flex-start}
+  .step .num{flex:none;width:42px;height:42px;border-radius:12px;background:var(--mint);color:#123a24;font-weight:900;display:grid;place-items:center}
+  .step h3{font-size:1.05rem;margin-bottom:3px}
+  .step p{color:var(--muted);font-size:.92rem}
+  @media(min-width:820px){.steps{grid-template-columns:repeat(2,1fr)}}
+
+  /* video */
+  .video-box{max-width:760px;margin:30px auto 0;border-radius:20px;overflow:hidden;box-shadow:0 22px 44px rgba(20,22,24,.16);background:#000}
+  .video-box video{width:100%;display:block}
+  .video-ph{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,var(--blue-d),var(--mint-d));display:grid;place-items:center;color:#fff;text-align:center;padding:20px}
+  .video-ph .play{width:74px;height:74px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;margin:0 auto 14px}
+  .video-ph .play svg{width:30px;height:30px;fill:var(--blue-d);margin-left:4px}
+  .video-ph b{font-size:1.05rem}.video-ph small{opacity:.9}
+
+  /* testimonios */
+  .tgrid{display:grid;gap:16px;margin-top:28px}
+  .tcard{background:var(--gray);border:1px solid var(--line);border-radius:18px;padding:24px;text-align:left}
+  .stars{color:var(--mint-d);letter-spacing:2px;margin-bottom:10px}
   .who{margin-top:16px;display:flex;gap:12px;align-items:center}
-  .av{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--rose));color:#fff;display:grid;place-items:center;font-weight:700}
+  .av{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--blue-d),var(--mint-d));color:#fff;display:grid;place-items:center;font-weight:700}
   .who b{display:block;font-size:.9rem}.who small{color:var(--muted);font-size:.8rem}
   @media(min-width:760px){.tgrid{grid-template-columns:repeat(3,1fr);gap:20px}}
   .ph-note{text-align:center;margin-top:16px;font-size:.8rem;color:var(--muted)}
 
-  /* urgency band */
-  .urg-band{background:var(--rose-s);border:1px solid #f2ddd7;border-radius:22px;padding:34px 24px;text-align:center}
-  .urg-band h2{font-size:clamp(1.5rem,4.4vw,2.1rem)}
-  .urg-band p{color:#7a5b55;margin:10px auto 22px;max-width:44ch}
+  /* urgencia */
+  .urg-band{background:#eef6fb;border:1px solid #d9e8f2;border-radius:22px;padding:34px 24px;text-align:center}
+  .urg-band h2{font-size:clamp(1.4rem,4.2vw,2rem)}
+  .urg-band p{color:#4a5560;margin:10px auto 22px;max-width:46ch}
 
-  /* FAQ */
-  .faq{max-width:720px;margin:30px auto 0}
-  details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:6px 18px;margin-bottom:12px}
-  summary{cursor:pointer;font-weight:600;padding:14px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+  /* faq */
+  .faq{max-width:720px;margin:28px auto 0;text-align:left}
+  details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:4px 18px;margin-bottom:12px}
+  summary{cursor:pointer;font-weight:600;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
   summary::-webkit-details-marker{display:none}
-  summary::after{content:"+";color:var(--brand);font-size:1.4rem;font-weight:700;line-height:1}
+  summary::after{content:"+";color:var(--blue-d);font-size:1.4rem;font-weight:700;line-height:1}
   details[open] summary::after{content:"–"}
-  details p{color:var(--muted);padding:0 0 16px;font-size:.94rem}
+  details p{color:var(--muted);padding:0 0 16px;font-size:.93rem}
 
-  /* final cta */
-  .final{background:linear-gradient(135deg,var(--brand),var(--brand-d));border-radius:26px;padding:52px 24px;text-align:center;color:#fff}
-  .final h2{font-size:clamp(1.7rem,5vw,2.5rem);margin-bottom:12px}
-  .final p{max-width:44ch;margin:0 auto 26px;color:rgba(255,255,255,.94)}
-  .final .wa{background:#fff;color:var(--wa-d);box-shadow:0 14px 30px rgba(0,0,0,.18)}
-  .final .wa svg{fill:var(--wa-d)}
+  /* final */
+  .final{background:linear-gradient(135deg,var(--blue-d),var(--mint-d));border-radius:24px;padding:52px 24px;text-align:center;color:#fff}
+  .final h2{font-size:clamp(1.6rem,4.6vw,2.4rem);margin-bottom:12px;color:#fff}
+  .final p{max-width:46ch;margin:0 auto 24px;color:rgba(255,255,255,.95)}
+  .final .wa{background:#fff;color:var(--wa-d)}.final .wa svg{fill:var(--wa-d)}
 
-  footer{padding:38px 0 120px;color:var(--muted);font-size:.86rem;border-top:1px solid var(--line);margin-top:56px}
-  footer .brand{margin-bottom:12px}
-  footer a{color:var(--brand-d)}
-  .legal{font-size:.76rem;margin-top:10px;color:#a49b90}
+  footer{padding:36px 0 120px;color:var(--muted);font-size:.86rem;border-top:1px solid var(--line);margin-top:52px;text-align:center}
+  footer a{color:var(--blue-d)}
+  .legal{font-size:.76rem;margin-top:12px;color:#98a0a7;max-width:60ch;margin-left:auto;margin-right:auto}
 
-  /* floating WhatsApp */
-  .wa-fab{position:fixed;right:16px;bottom:16px;width:60px;height:60px;border-radius:50%;background:var(--wa);
-    display:grid;place-items:center;box-shadow:0 10px 26px rgba(37,211,102,.45);z-index:60;animation:pulse 2.4s infinite}
+  .wa-fab{position:fixed;right:16px;bottom:16px;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 26px rgba(37,211,102,.45);z-index:60;animation:pulse 2.4s infinite}
   .wa-fab svg{width:34px;height:34px;fill:#fff}
   @keyframes pulse{0%{box-shadow:0 10px 26px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 10px 26px rgba(37,211,102,.45),0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 10px 26px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,0)}}
 </style>
 </head>
 <body>
 
-<!-- HEADER: sin menú de navegación, una sola acción -->
 <header>
   <div class="wrap bar">
-    <div class="brand"><span class="dot">✦</span>Derma<span>Glow</span></div>
-    <a class="wa" href="https://wa.me/10000000000?text=Hola,%20quiero%20mi%20promoci%C3%B3n%20de%20la%20consulta%20dermatol%C3%B3gica%20(40%25%20OFF)." target="_blank" rel="noopener">
+    <div class="brand"><span class="mk">CDCC</span><span>Centro de Dermatología<small>y Cirugía Cosmética</small></span></div>
+    <a class="wa" href="https://wa.me/10000000000?text=Hola,%20quiero%20agendar%20mi%20evaluaci%C3%B3n%20dermatol%C3%B3gica%20GRATIS%20de%20septiembre." target="_blank" rel="noopener" onclick="fbq('track','Contact')">
       <svg viewBox="0 0 32 32"><path d="M16.02 3.2c-7.05 0-12.78 5.73-12.78 12.78 0 2.25.59 4.45 1.71 6.39L3.2 28.8l6.6-1.73c1.87 1.02 3.98 1.56 6.13 1.56 7.05 0 12.78-5.73 12.78-12.78 0-3.42-1.33-6.63-3.75-9.05a12.7 12.7 0 00-9.05-3.6zm5.83 15.43c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.72.16-.21.32-.82 1.04-1.01 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.89-1.78-2.21-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.99-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.66 0 1.57 1.14 3.08 1.3 3.29.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.89-.77 2.16-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37z"/></svg>
       <span class="t">WhatsApp</span>
     </a>
   </div>
 </header>
 
-<!-- HERO / Above the fold -->
-<section class="hero">
-  <div class="wrap hero-grid">
+<!-- HERO -->
+<section class="hero" style="padding:0">
+  <div class="wrap hero-in">
     <div>
-      <span class="pill">🩺 Clínica Dermatológica · Tu Ciudad</span>
-      <h1>¿Acné, manchas o piel opaca? <span class="hl">Recupera una piel sana y radiante.</span></h1>
-      <p class="sub">Agenda tu consulta con diagnóstico de piel y un plan 100% personalizado. Este mes, con <b>40% de descuento</b>.</p>
+      <span class="tag">🔬 Detección temprana de cáncer de piel</span>
+      <h1>Una evaluación a tiempo <span class="hl">puede hacer la diferencia.</span></h1>
+      <p class="sub">¿Tienes una mancha, lunar o lesión en la piel que ha cambiado? Consulta con nuestros especialistas y dale a tu piel la atención que merece.</p>
       <div class="cta">
-        <a class="wa" href="https://wa.me/10000000000?text=Hola,%20quiero%20mi%20promoci%C3%B3n%20de%20la%20consulta%20dermatol%C3%B3gica%20(40%25%20OFF)." target="_blank" rel="noopener">
+        <a class="wa" href="https://wa.me/10000000000?text=Hola,%20quiero%20agendar%20mi%20evaluaci%C3%B3n%20dermatol%C3%B3gica%20GRATIS%20de%20septiembre." target="_blank" rel="noopener" onclick="fbq('track','Contact')">
           <svg viewBox="0 0 32 32"><path d="M16.02 3.2c-7.05 0-12.78 5.73-12.78 12.78 0 2.25.59 4.45 1.71 6.39L3.2 28.8l6.6-1.73c1.87 1.02 3.98 1.56 6.13 1.56 7.05 0 12.78-5.73 12.78-12.78 0-3.42-1.33-6.63-3.75-9.05a12.7 12.7 0 00-9.05-3.6zm5.83 15.43c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.72.16-.21.32-.82 1.04-1.01 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.89-1.78-2.21-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.99-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.66 0 1.57 1.14 3.08 1.3 3.29.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.89-.77 2.16-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37z"/></svg>
-          Quiero mi promoción por WhatsApp
+          Agenda tu evaluación por WhatsApp
         </a>
-        <span class="wa-note">Respuesta inmediata · Sin compromiso</span>
+        <span class="wa-note">Consulta GRATIS en septiembre · Respuesta inmediata</span>
       </div>
-      <div class="trust">
-        <span>👩‍⚕️ <b>Dermatólogos</b> certificados</span>
-        <span>💬 <b>+5.000</b> pacientes</span>
-        <span>⭐ <b>4.9</b> en Google</span>
+      <div class="hstat">
+        <span>🩺 <b>+15 años</b> tratando cáncer de piel</span>
+        <span>👥 <b>+5.000</b> pacientes evaluados</span>
       </div>
     </div>
     <div class="hero-img">
-      <img src="images/glow.jpg" alt="Tratamiento facial en clínica dermatológica">
-      <div class="hero-tag">40% OFF este mes<small>Consulta + diagnóstico de piel</small></div>
+      <img src="images/especialista.jpg" alt="Especialista en dermatología del CDCC">
+      <div class="hero-badge">Consulta GRATIS<small>Solo en septiembre</small></div>
     </div>
   </div>
 </section>
 
-<!-- PROMO / la oferta -->
+<!-- OFERTA -->
 <section>
   <div class="wrap">
-    <div class="promo">
-      <div class="promo-in">
+    <div class="offer">
+      <div class="offer-in">
         <div>
-          <span class="flag">PROMOCIÓN DEL MES</span>
-          <h2>Consulta dermatológica + diagnóstico de piel</h2>
-          <div class="price"><s>$80</s> Hoy <b>$48</b> · 40% OFF</div>
+          <span class="flag">PROMOCIÓN DE SEPTIEMBRE</span>
+          <h2>Consulta dermatológica de evaluación</h2>
+          <div class="free"><s>$50</s> GRATIS</div>
           <ul class="incl">
-            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Valoración con dermatólogo certificado</li>
-            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Diagnóstico digital de tu tipo de piel</li>
-            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Plan de tratamiento 100% personalizado</li>
-            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Recomendación de rutina y productos</li>
+            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Consulta de evaluación con dermatólogo — <b>sin costo</b></li>
+            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Si el especialista lo considera necesario: <b>50% de descuento</b> en la toma de biopsia</li>
+            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> <b>50% de descuento</b> en el estudio histopatológico</li>
           </ul>
-          <div class="urg">⏳ Solo durante este mes · Cupos limitados por semana</div>
+          <div class="urg">📅 Válida del 1 al 30 de septiembre · Cupos limitados</div>
+          <div class="fine">Promoción válida exclusivamente para evaluaciones dermatológicas relacionadas con lesiones sospechosas de cáncer de piel.</div>
         </div>
         <div class="center">
-          <a class="wa" href="https://wa.me/10000000000?text=Hola,%20quiero%20agendar%20mi%20consulta%20con%2040%25%20de%20descuento." target="_blank" rel="noopener">
+          <a class="wa" href="https://wa.me/10000000000?text=Hola,%20quiero%20mi%20consulta%20de%20evaluaci%C3%B3n%20GRATIS%20de%20septiembre." target="_blank" rel="noopener" onclick="fbq('track','Contact')">
             <svg viewBox="0 0 32 32"><path d="M16.02 3.2c-7.05 0-12.78 5.73-12.78 12.78 0 2.25.59 4.45 1.71 6.39L3.2 28.8l6.6-1.73c1.87 1.02 3.98 1.56 6.13 1.56 7.05 0 12.78-5.73 12.78-12.78 0-3.42-1.33-6.63-3.75-9.05a12.7 12.7 0 00-9.05-3.6zm5.83 15.43c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.72.16-.21.32-.82 1.04-1.01 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.89-1.78-2.21-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.99-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.66 0 1.57 1.14 3.08 1.3 3.29.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.89-.77 2.16-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37z"/></svg>
-            Agendar mi cita ahora
+            Agendar mi evaluación
           </a>
-          <span class="wa-note" style="color:#c9c0b8">Te confirmamos disponibilidad al instante</span>
+          <span class="wa-note" style="color:#c9c0b8">Te confirmamos tu cita al instante</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ¿Es para ti? / pain points -->
-<section>
+<!-- ABCDE -->
+<section style="background:var(--gray)">
   <div class="wrap center">
-    <span class="eyebrow">Esto es para ti si te preocupa</span>
-    <h2 class="sec-title">Tratamos lo que afecta tu piel y tu confianza</h2>
-    <div class="pain">
-      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="14" r="1"/><circle cx="14" cy="9" r="1"/></svg></div>Acné y cicatrices<small>Activo o marcas</small></div>
-      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 100 18 9 9 0 000-18z"/><path d="M8 14c1.5 1.5 6.5 1.5 8 0"/></svg></div>Manchas y melasma<small>Tono disparejo</small></div>
-      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 12c4-4 12-4 16 0M4 16c4-4 12-4 16 0M4 8c4-4 12-4 16 0"/></svg></div>Líneas y arrugas<small>Signos de edad</small></div>
-      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 8l14 8M19 8L5 16"/></svg></div>Poros dilatados<small>Piel grasa</small></div>
-      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5-7-11a7 7 0 0114 0c0 6-7 11-7 11z"/></svg></div>Resequedad<small>Piel apagada</small></div>
-      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 9c1 2 5 2 6 0"/></svg></div>Rosácea<small>Enrojecimiento</small></div>
+    <span class="eyebrow">Aprende a revisarte</span>
+    <h2 class="sec-title">Regla ABCDE: cuándo vigilar un lunar</h2>
+    <p class="sec-sub">Si un lunar o mancha cumple una o más de estas señales, es momento de una evaluación.</p>
+    <div class="abcde">
+      <div class="ab"><div class="l">A</div><b>Asimetría</b><small>Una mitad distinta a la otra</small></div>
+      <div class="ab"><div class="l">B</div><b>Bordes</b><small>Irregulares o mal definidos</small></div>
+      <div class="ab"><div class="l">C</div><b>Color</b><small>Varios tonos o desigual</small></div>
+      <div class="ab"><div class="l">D</div><b>Diámetro</b><small>Mayor a 6 mm</small></div>
+      <div class="ab"><div class="l">E</div><b>Evolución</b><small>Cambia con el tiempo</small></div>
     </div>
   </div>
 </section>
 
-<!-- POR QUÉ ELEGIRNOS -->
-<section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<!-- PARA TI SI -->
+<section>
+  <div class="wrap center">
+    <span class="eyebrow">Esta evaluación es para ti si notas</span>
+    <h2 class="sec-title">Señales que no debes ignorar</h2>
+    <ul class="signs">
+      <li><span class="d"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Una mancha o lunar <b>nuevo</b> o que cambió de forma</li>
+      <li><span class="d"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Lesiones que <b>sangran</b>, pican o duelen</li>
+      <li><span class="d"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Heridas que <b>no cicatrizan</b> en semanas</li>
+      <li><span class="d"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Un lunar que <b>creció</b> o cambió de color</li>
+      <li><span class="d"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Manchas ásperas o descamadas que persisten</li>
+      <li><span class="d"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Antecedentes de <b>exposición solar</b> o casos en la familia</li>
+    </ul>
+  </div>
+</section>
+
+<!-- RESPALDO MÉDICO -->
+<section style="background:var(--gray)">
   <div class="wrap split">
-    <div class="img-col"><img src="images/facial.jpg" alt="Tratamiento facial con tecnología dermatológica"></div>
+    <div class="img-col"><img src="images/equipo.jpg" alt="Equipo médico especialista del CDCC"></div>
     <div>
-      <span class="eyebrow">Por qué elegirnos</span>
-      <h2 class="sec-title">Resultados reales, con respaldo médico</h2>
+      <span class="eyebrow">Por qué CDCC</span>
+      <h2 class="sec-title">Especialistas con experiencia en cáncer de piel</h2>
       <ul class="feat">
-        <li><span class="n">✓</span><div><h3>Dermatólogos certificados</h3><p>Cada plan lo diseña y supervisa un especialista, no un promotor.</p></div></li>
-        <li><span class="n">✓</span><div><h3>Tecnología de última generación</h3><p>Equipos y protocolos avalados para tratar tu piel con seguridad.</p></div></li>
-        <li><span class="n">✓</span><div><h3>Plan personalizado</h3><p>Diagnóstico primero: nada de tratamientos genéricos ni promesas vacías.</p></div></li>
-        <li><span class="n">✓</span><div><h3>Atención cálida y sin presión</h3><p>Te explicamos todo con claridad para que decidas con confianza.</p></div></li>
+        <li><span class="n">✓</span><div><h3>+15 años tratando cáncer de piel</h3><p>Experiencia real en detección, diagnóstico y manejo de lesiones cutáneas.</p></div></li>
+        <li><span class="n">✓</span><div><h3>Diagnóstico con respaldo</h3><p>Biopsia y estudio histopatológico para un diagnóstico certero, no una suposición.</p></div></li>
+        <li><span class="n">✓</span><div><h3>+5.000 pacientes evaluados</h3><p>Miles de personas han cuidado su piel a tiempo con nosotros.</p></div></li>
+        <li><span class="n">✓</span><div><h3>Atención cercana y clara</h3><p>Te explicamos cada paso con calma, para que decidas con tranquilidad.</p></div></li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIOS -->
+<!-- PROCESO -->
 <section>
-  <div class="wrap center">
-    <span class="eyebrow">Lo que dicen nuestras pacientes</span>
-    <h2 class="sec-title">Piel más sana, confianza renovada</h2>
-    <div class="tgrid">
-      <div class="tcard center" style="text-align:left"><div class="stars">★★★★★</div><p>“En dos sesiones mi acné bajó muchísimo. Por fin un lugar donde me explican qué le pasa a mi piel.”</p><div class="who"><div class="av">M</div><div><b>María G.</b><small>Paciente</small></div></div></div>
-      <div class="tcard" style="text-align:left"><div class="stars">★★★★★</div><p>“Las manchas del embarazo se aclararon con el plan que me armaron. Súper atentos por WhatsApp.”</p><div class="who"><div class="av">L</div><div><b>Lucía R.</b><small>Paciente</small></div></div></div>
-      <div class="tcard" style="text-align:left"><div class="stars">★★★★★</div><p>“La consulta valió cada centavo. Diagnóstico claro y sin venderme cosas que no necesito.”</p><div class="who"><div class="av">D</div><div><b>Diana P.</b><small>Paciente</small></div></div></div>
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Cómo funciona</span>
+      <h2 class="sec-title">De la duda a la tranquilidad en 4 pasos</h2>
     </div>
-    <p class="ph-note">↳ Reseñas de ejemplo — reemplázalas por testimonios reales antes de publicar.</p>
+    <div class="steps">
+      <div class="step"><span class="num">1</span><div><h3>Escríbenos por WhatsApp</h3><p>Agenda tu evaluación gratuita. Te confirmamos horario al instante.</p></div></div>
+      <div class="step"><span class="num">2</span><div><h3>Evaluación con el especialista</h3><p>Revisamos tu piel y las lesiones que te preocupan, sin costo.</p></div></div>
+      <div class="step"><span class="num">3</span><div><h3>Biopsia si es necesaria</h3><p>Si el especialista lo indica, se realiza con 50% de descuento.</p></div></div>
+      <div class="step"><span class="num">4</span><div><h3>Estudio histopatológico</h3><p>Análisis de laboratorio (50% OFF) para un diagnóstico certero y tu plan a seguir.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO TESTIMONIAL -->
+<section style="background:var(--gray)">
+  <div class="wrap center">
+    <span class="eyebrow">Historias reales</span>
+    <h2 class="sec-title">Lo que dicen nuestros pacientes</h2>
+    <p class="sec-sub">Un testimonio vale más que mil palabras.</p>
+    <div class="video-box">
+      <!-- Cuando envíes el video, reemplaza este bloque por:
+           <video controls playsinline preload="metadata" poster="images/video-poster.jpg">
+             <source src="images/testimonio.mp4" type="video/mp4">
+           </video>  -->
+      <div class="video-ph">
+        <div>
+          <div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <b>Aquí va el reel testimonial</b>
+          <small>Envíanos el video y lo integramos (comprimido y liviano)</small>
+        </div>
+      </div>
+    </div>
+    <div class="tgrid">
+      <div class="tcard"><div class="stars">★★★★★</div><p>“Fui por una mancha que había cambiado. Me atendieron rápido y con mucha claridad. Qué alivio haber ido a tiempo.”</p><div class="who"><div class="av">M</div><div><b>Paciente</b><small>Testimonio</small></div></div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p>“Me explicaron todo el proceso de la biopsia con calma. Profesionales y humanos.”</p><div class="who"><div class="av">J</div><div><b>Paciente</b><small>Testimonio</small></div></div></div>
+      <div class="tcard"><div class="stars">★★★★★</div><p>“La detección temprana me dio tranquilidad. Recomiendo revisarse sin miedo.”</p><div class="who"><div class="av">R</div><div><b>Paciente</b><small>Testimonio</small></div></div></div>
+    </div>
+    <p class="ph-note">↳ Testimonios de ejemplo — reemplázalos por reseñas reales antes de publicar.</p>
   </div>
 </section>
 
@@ -264,10 +335,10 @@
 <section>
   <div class="wrap">
     <div class="urg-band">
-      <span class="eyebrow">Oferta por tiempo limitado</span>
-      <h2>La promoción de 40% termina este mes</h2>
-      <p>Abrimos solo un número limitado de citas con descuento cada semana para dar atención de calidad. Cuando se llenan, se cierran.</p>
-      <a class="wa" href="https://wa.me/10000000000?text=Hola,%20quiero%20apartar%20mi%20cupo%20con%2040%25%20de%20descuento." target="_blank" rel="noopener">
+      <span class="eyebrow">Solo durante septiembre</span>
+      <h2>La consulta gratuita termina el 30 de septiembre</h2>
+      <p>Abrimos un número limitado de cupos por semana para dar una atención de calidad. No dejes pasar tu evaluación.</p>
+      <a class="wa" href="https://wa.me/10000000000?text=Hola,%20quiero%20apartar%20mi%20cupo%20para%20la%20evaluaci%C3%B3n%20GRATIS%20de%20septiembre." target="_blank" rel="noopener" onclick="fbq('track','Contact')">
         <svg viewBox="0 0 32 32"><path d="M16.02 3.2c-7.05 0-12.78 5.73-12.78 12.78 0 2.25.59 4.45 1.71 6.39L3.2 28.8l6.6-1.73c1.87 1.02 3.98 1.56 6.13 1.56 7.05 0 12.78-5.73 12.78-12.78 0-3.42-1.33-6.63-3.75-9.05a12.7 12.7 0 00-9.05-3.6zm5.83 15.43c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.72.16-.21.32-.82 1.04-1.01 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.89-1.78-2.21-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.99-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.66 0 1.57 1.14 3.08 1.3 3.29.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.89-.77 2.16-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37z"/></svg>
         Apartar mi cupo por WhatsApp
       </a>
@@ -275,17 +346,17 @@
   </div>
 </section>
 
-<!-- FAQ / objeciones -->
+<!-- FAQ -->
 <section>
   <div class="wrap center">
     <span class="eyebrow">Preguntas frecuentes</span>
     <h2 class="sec-title">Resolvemos tus dudas</h2>
-    <div class="faq" style="text-align:left">
-      <details><summary>¿Cómo agendo mi cita?</summary><p>Escríbenos por WhatsApp con el botón de esta página. Te respondemos al instante y te damos los horarios disponibles.</p></details>
-      <details><summary>¿La consulta tiene algún costo?</summary><p>Sí, la consulta con diagnóstico tiene un costo con 40% de descuento este mes. Ese valor se aplica a tu plan si decides continuar.</p></details>
-      <details><summary>¿Los tratamientos duelen?</summary><p>La mayoría son cómodos y no invasivos. El dermatólogo te explica cada paso y adapta todo a tu tolerancia y tipo de piel.</p></details>
-      <details><summary>¿Necesito preparación previa?</summary><p>No para la consulta. Solo llega sin maquillaje si puedes, para valorar mejor tu piel.</p></details>
-      <details><summary>¿Qué formas de pago aceptan?</summary><p>Efectivo, tarjeta y transferencia. Te compartimos los detalles por WhatsApp al agendar.</p></details>
+    <div class="faq">
+      <details><summary>¿La consulta es realmente gratis?</summary><p>Sí. Durante septiembre la consulta de evaluación no tiene costo (valor normal $50) para lesiones sospechosas de cáncer de piel.</p></details>
+      <details><summary>¿A quién aplica la promoción?</summary><p>Aplica exclusivamente a evaluaciones dermatológicas relacionadas con lesiones sospechosas de cáncer de piel (manchas, lunares o lesiones que han cambiado).</p></details>
+      <details><summary>¿La biopsia también tiene descuento?</summary><p>Sí. Si el especialista considera necesaria una biopsia, tendrás 50% de descuento en la toma y 50% en el estudio histopatológico.</p></details>
+      <details><summary>¿La biopsia duele?</summary><p>Se realiza con anestesia local y es un procedimiento breve. El especialista te explica todo antes de comenzar.</p></details>
+      <details><summary>¿Cómo agendo mi cita?</summary><p>Escríbenos por WhatsApp con cualquiera de los botones de esta página. Te respondemos al instante con los horarios disponibles.</p></details>
     </div>
   </div>
 </section>
@@ -294,27 +365,25 @@
 <section>
   <div class="wrap">
     <div class="final">
-      <h2>Tu mejor piel empieza con un mensaje</h2>
-      <p>Escríbenos por WhatsApp y aparta tu consulta con 40% de descuento hoy mismo.</p>
-      <a class="wa" href="https://wa.me/10000000000?text=Hola,%20quiero%20mi%20promoci%C3%B3n%20de%20la%20consulta%20dermatol%C3%B3gica%20(40%25%20OFF)." target="_blank" rel="noopener">
+      <h2>Revisa tu piel a tiempo</h2>
+      <p>Agenda tu evaluación dermatológica gratuita de septiembre. Escríbenos por WhatsApp ahora.</p>
+      <a class="wa" href="https://wa.me/10000000000?text=Hola,%20quiero%20agendar%20mi%20evaluaci%C3%B3n%20dermatol%C3%B3gica%20GRATIS%20de%20septiembre." target="_blank" rel="noopener" onclick="fbq('track','Contact')">
         <svg viewBox="0 0 32 32"><path d="M16.02 3.2c-7.05 0-12.78 5.73-12.78 12.78 0 2.25.59 4.45 1.71 6.39L3.2 28.8l6.6-1.73c1.87 1.02 3.98 1.56 6.13 1.56 7.05 0 12.78-5.73 12.78-12.78 0-3.42-1.33-6.63-3.75-9.05a12.7 12.7 0 00-9.05-3.6zm5.83 15.43c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.72.16-.21.32-.82 1.04-1.01 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.89-1.78-2.21-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.99-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.66 0 1.57 1.14 3.08 1.3 3.29.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.89-.77 2.16-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37z"/></svg>
-        Quiero mi promoción por WhatsApp
+        Agenda tu evaluación por WhatsApp
       </a>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="wrap center">
-    <div class="brand center" style="justify-content:center"><span class="dot">✦</span>Derma<span>Glow</span></div>
-    <div>Clínica Dermatológica · Dirección, Ciudad · Lun a Sáb</div>
-    <div style="margin-top:6px">Atención por WhatsApp: <a href="https://wa.me/10000000000" target="_blank" rel="noopener">+1 (000) 000-0000</a></div>
-    <p class="legal">© 2026 Derma Glow. Promoción válida por tiempo limitado y sujeta a disponibilidad de cupos. Los resultados varían según cada paciente. Esta página es informativa y no sustituye una valoración médica.</p>
+  <div class="wrap">
+    <div class="brand center" style="justify-content:center"><span class="mk">CDCC</span><span>Centro de Dermatología y Cirugía Cosmética</span></div>
+    <div style="margin-top:12px">Dirección, Ciudad · Lun a Sáb · WhatsApp: <a href="https://wa.me/10000000000" target="_blank" rel="noopener">+1 (000) 000-0000</a></div>
+    <p class="legal">© 2026 CDCC — Centro de Dermatología y Cirugía Cosmética. Promoción válida del 1 al 30 de septiembre, exclusivamente para evaluaciones relacionadas con lesiones sospechosas de cáncer de piel y sujeta a disponibilidad de cupos. Esta página es de carácter informativo y no sustituye una valoración médica presencial. Los resultados y la necesidad de estudios se determinan en la consulta.</p>
   </div>
 </footer>
 
-<!-- WhatsApp flotante (única acción, siempre visible) -->
-<a class="wa-fab" href="https://wa.me/10000000000?text=Hola,%20quiero%20mi%20promoci%C3%B3n%20de%20la%20consulta%20dermatol%C3%B3gica%20(40%25%20OFF)." target="_blank" rel="noopener" aria-label="WhatsApp">
+<a class="wa-fab" href="https://wa.me/10000000000?text=Hola,%20quiero%20agendar%20mi%20evaluaci%C3%B3n%20dermatol%C3%B3gica%20GRATIS%20de%20septiembre." target="_blank" rel="noopener" aria-label="WhatsApp" onclick="fbq('track','Contact')">
   <svg viewBox="0 0 32 32"><path d="M16.02 3.2c-7.05 0-12.78 5.73-12.78 12.78 0 2.25.59 4.45 1.71 6.39L3.2 28.8l6.6-1.73c1.87 1.02 3.98 1.56 6.13 1.56 7.05 0 12.78-5.73 12.78-12.78 0-3.42-1.33-6.63-3.75-9.05a12.7 12.7 0 00-9.05-3.6zm5.83 15.43c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.72.16-.21.32-.82 1.04-1.01 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.89-1.78-2.21-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.99-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.66 0 1.57 1.14 3.08 1.3 3.29.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.89-.77 2.16-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37z"/></svg>
 </a>
 </body>
