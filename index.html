@@ -10,7 +10,7 @@
 <meta property="og:description" content="Consulta dermatológica GRATIS en septiembre para evaluar lesiones sospechosas de cáncer de piel. Agenda por WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <!-- ============================================================= -->
 <!-- META PIXEL — reemplaza TU_PIXEL_ID por el ID real de la cuenta -->
@@ -27,13 +27,13 @@ fbq('track','PageView');
 
 <style>
   :root{
-    --ink:#141618; --blue:#b7d3e9; --blue-d:#37729b; --blue-dd:#245277;
-    --mint:#c7ead1; --mint-d:#4f9d73; --gray:#f5f5f5; --line:#e7ebee;
-    --muted:#697077; --paper:#ffffff; --wa:#25d366; --wa-d:#1da851;
+    --ink:#111111; --blue:#b7d3e9; --blue-d:#111111; --blue-dd:#111111;
+    --mint:#c7ead1; --mint-d:#111111; --gray:#f5f5f5; --line:#e6e6e6;
+    --muted:#5b5b5b; --paper:#ffffff; --wa:#111111; --wa-d:#000000;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  body{background:var(--paper);color:var(--ink);font-family:'Poppins',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
   h1,h2,h3{line-height:1.16;font-weight:800;letter-spacing:-.01em}
   img{max-width:100%;display:block}
   .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
@@ -41,13 +41,13 @@ fbq('track','PageView');
 
   /* WhatsApp — única acción */
   .wa{display:inline-flex;align-items:center;gap:11px;background:var(--wa);color:#fff;font-weight:700;font-size:1.04rem;
-    padding:16px 26px;border-radius:100px;box-shadow:0 12px 26px rgba(37,211,102,.32);transition:.2s;text-decoration:none;border:0;cursor:pointer}
+    padding:16px 26px;border-radius:100px;box-shadow:0 10px 24px rgba(17,17,17,.22);transition:.2s;text-decoration:none;border:0;cursor:pointer}
   .wa:hover{background:var(--wa-d);transform:translateY(-2px)}
   .wa svg{width:24px;height:24px;fill:#fff;flex:none}
   .wa-note{display:block;margin-top:10px;font-size:.86rem;color:var(--muted)}
   .promo-strip{background:var(--ink);color:#fff;text-align:center;font-size:.82rem;padding:9px 16px;font-weight:500}
   .promo-strip b{color:var(--mint)}
-  .price-anchor{display:inline-flex;align-items:baseline;gap:10px;margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:100px;padding:8px 18px}
+  .price-anchor{display:inline-flex;align-items:baseline;gap:10px;margin-top:18px;background:var(--mint);border:0;border-radius:100px;padding:8px 18px}
   .price-anchor s{color:var(--muted);font-weight:600;font-size:1.05rem}
   .price-anchor b{color:var(--mint-d);font-size:1.55rem;font-weight:900}
   .price-anchor span{color:var(--muted);font-weight:500;font-size:.85rem}
@@ -64,12 +64,12 @@ fbq('track','PageView');
   @media(max-width:540px){.bar .wa .t{display:none}.bar .wa{padding:11px 13px}.brand small{display:none}}
 
   /* HERO */
-  .hero{background:linear-gradient(180deg,#eef6fb 0%,#f4f9f4 60%,#fff 100%);position:relative;overflow:hidden}
+  .hero{background:linear-gradient(180deg,#d8ebf7 0%,#e7f4ed 55%,#fff 100%);position:relative;overflow:hidden}
   .hero-in{padding:34px 0 44px;display:grid;gap:26px;align-items:center}
   .tag{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);color:var(--blue-dd);
     font-weight:700;font-size:.8rem;padding:7px 14px;border-radius:100px}
   .hero h1{font-size:clamp(1.9rem,6.4vw,3rem);margin:16px 0 14px}
-  .hero h1 .hl{color:var(--blue-d)}
+  .hero h1 .hl{background:var(--mint);padding:0 .14em;border-radius:8px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
   .hero .sub{font-size:1.1rem;color:#3c4348;max-width:40ch}
   .hero .cta{margin-top:24px}
   .hstat{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;font-size:.88rem;color:var(--muted);font-weight:500}
@@ -94,8 +94,8 @@ fbq('track','PageView');
   .offer .free s{color:#8b929a;font-size:1rem;font-weight:600;margin-right:10px}
   .incl{list-style:none;display:grid;gap:12px;margin:18px 0 22px}
   .incl li{display:flex;gap:12px;align-items:flex-start;color:#e9edf1}
-  .incl .ck{flex:none;width:24px;height:24px;border-radius:50%;background:var(--mint-d);display:grid;place-items:center}
-  .incl .ck svg{width:14px;height:14px;fill:none;stroke:#fff;stroke-width:3}
+  .incl .ck{flex:none;width:24px;height:24px;border-radius:50%;background:var(--mint);display:grid;place-items:center}
+  .incl .ck svg{width:14px;height:14px;fill:none;stroke:#111;stroke-width:3}
   .offer .fine{font-size:.82rem;color:#9aa1a8;margin-top:8px}
   .offer .urg{margin-top:14px;font-size:.92rem;color:#bfe0cd;font-weight:700}
   .offer .reassure{margin-top:14px;background:rgba(199,234,209,.14);border:1px solid rgba(199,234,209,.32);border-radius:12px;padding:12px 14px;font-size:.9rem;color:#e2f2e8}
@@ -154,7 +154,7 @@ fbq('track','PageView');
   .ph-note{text-align:center;margin-top:16px;font-size:.8rem;color:var(--muted)}
 
   /* urgencia */
-  .urg-band{background:#eef6fb;border:1px solid #d9e8f2;border-radius:22px;padding:34px 24px;text-align:center}
+  .urg-band{background:var(--blue);border:0;border-radius:22px;padding:34px 24px;text-align:center}
   .urg-band h2{font-size:clamp(1.4rem,4.2vw,2rem)}
   .urg-band p{color:#4a5560;margin:10px auto 18px;max-width:46ch}
   .countdown{display:flex;gap:10px;justify-content:center;margin:4px 0 22px;flex-wrap:wrap}
@@ -173,18 +173,18 @@ fbq('track','PageView');
   details p{color:var(--muted);padding:0 0 16px;font-size:.93rem}
 
   /* final */
-  .final{background:linear-gradient(135deg,var(--blue-d),var(--mint-d));border-radius:24px;padding:52px 24px;text-align:center;color:#fff}
-  .final h2{font-size:clamp(1.6rem,4.6vw,2.4rem);margin-bottom:12px;color:#fff}
-  .final p{max-width:46ch;margin:0 auto 24px;color:rgba(255,255,255,.95)}
-  .final .wa{background:#fff;color:var(--wa-d)}.final .wa svg{fill:var(--wa-d)}
+  .final{background:var(--mint);border-radius:24px;padding:52px 24px;text-align:center;color:var(--ink)}
+  .final h2{font-size:clamp(1.6rem,4.6vw,2.4rem);margin-bottom:12px;color:var(--ink)}
+  .final p{max-width:46ch;margin:0 auto 24px;color:rgba(17,17,17,.72)}
+  .final .wa{background:var(--ink);color:#fff}.final .wa svg{fill:#fff}
 
   footer{padding:36px 0 120px;color:var(--muted);font-size:.86rem;border-top:1px solid var(--line);margin-top:52px;text-align:center}
   footer a{color:var(--blue-d)}
   .legal{font-size:.76rem;margin-top:12px;color:#98a0a7;max-width:60ch;margin-left:auto;margin-right:auto}
 
-  .wa-fab{position:fixed;right:16px;bottom:16px;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 26px rgba(37,211,102,.45);z-index:60;animation:pulse 2.4s infinite}
+  .wa-fab{position:fixed;right:16px;bottom:16px;width:60px;height:60px;border-radius:50%;background:var(--ink);display:grid;place-items:center;box-shadow:0 10px 26px rgba(17,17,17,.4);z-index:60;animation:pulse 2.4s infinite}
   .wa-fab svg{width:34px;height:34px;fill:#fff}
-  @keyframes pulse{0%{box-shadow:0 10px 26px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 10px 26px rgba(37,211,102,.45),0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 10px 26px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,0)}}
+  @keyframes pulse{0%{box-shadow:0 10px 26px rgba(17,17,17,.4),0 0 0 0 rgba(17,17,17,.4)}70%{box-shadow:0 10px 26px rgba(17,17,17,.4),0 0 0 16px rgba(17,17,17,0)}100%{box-shadow:0 10px 26px rgba(17,17,17,.4),0 0 0 0 rgba(17,17,17,0)}}
 </style>
 </head>
 <body>
@@ -259,7 +259,7 @@ fbq('track','PageView');
 </section>
 
 <!-- RESPALDO MÉDICO -->
-<section style="background:var(--gray)">
+<section style="background:var(--blue)">
   <div class="wrap split">
     <div class="img-col"><img src="images/equipo.jpg" alt="Equipo médico especialista del CDCC"></div>
     <div>
@@ -320,7 +320,7 @@ fbq('track','PageView');
 </section>
 
 <!-- EDUCACIÓN (condensada, más abajo en el embudo) -->
-<section style="background:var(--gray)">
+<section style="background:var(--mint)">
   <div class="wrap center">
     <span class="eyebrow">¿Cuándo revisarte?</span>
     <h2 class="sec-title">Vigila estas señales — regla ABCDE</h2>
