@@ -69,7 +69,14 @@ fbq('track','PageView');
   .tag{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);color:var(--blue-dd);
     font-weight:700;font-size:.8rem;padding:7px 14px;border-radius:100px}
   .hero h1{font-size:clamp(1.9rem,6.4vw,3rem);margin:16px 0 14px}
-  .hero h1 .hl{background:var(--mint);padding:0 .14em;border-radius:8px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+  .hero h1 .hl{background:var(--blue);padding:0 .14em;border-radius:8px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+  .realtag{display:inline-block;background:var(--mint);color:#111;font-weight:700;padding:9px 18px;border-radius:100px;margin-top:18px;font-size:.95rem}
+  .stats{display:grid;grid-template-columns:1fr;gap:16px;margin-top:30px}
+  .stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 20px;text-align:left}
+  .stat b{display:block;font-size:1.9rem;font-weight:800;color:#111;line-height:1.05}
+  .stat p{color:var(--muted);font-size:.92rem;margin-top:8px}
+  .stats-ref{margin-top:18px;font-size:.8rem;color:var(--muted)}
+  @media(min-width:820px){.stats{grid-template-columns:repeat(2,1fr);gap:18px}}
   .hero .sub{font-size:1.1rem;color:#3c4348;max-width:40ch}
   .hero .cta{margin-top:24px}
   .hstat{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;font-size:.88rem;color:var(--muted);font-weight:500}
@@ -208,26 +215,38 @@ fbq('track','PageView');
 <section class="hero" style="padding:0">
   <div class="wrap hero-in">
     <div>
-      <span class="tag">🔬 Detección temprana de cáncer de piel</span>
-      <h1>Consulta dermatológica <span class="hl">GRATIS</span> para revisar tus lunares y manchas</h1>
-      <p class="sub">Una evaluación a tiempo puede hacer la diferencia. Tu consulta es <b>gratis</b> (antes $50) y, si necesitas biopsia, tienes <b>50% de descuento</b>.</p>
-      <div class="price-anchor"><s>$50</s> <b>GRATIS</b> <span>en septiembre</span></div>
+      <span class="tag">Detección temprana de cáncer de piel</span>
+      <h1>El cambio climático y el sol están <span class="hl">transformando tu piel</span></h1>
+      <p class="sub">Con el aumento global de temperaturas y la radiación UV en niveles récord, el cáncer de piel se ha convertido en una epidemia silenciosa. Una evaluación a tiempo puede salvar tu vida.</p>
+      <span class="realtag">El cáncer de piel es real</span>
       <div class="cta">
         <a class="wa" href="https://wa.me/50360448696?text=Hola,%20quiero%20agendar%20mi%20evaluaci%C3%B3n%20dermatol%C3%B3gica%20GRATIS%20de%20septiembre." target="_blank" rel="noopener" onclick="fbq('track','Contact')">
           <svg viewBox="0 0 32 32"><path d="M16.02 3.2c-7.05 0-12.78 5.73-12.78 12.78 0 2.25.59 4.45 1.71 6.39L3.2 28.8l6.6-1.73c1.87 1.02 3.98 1.56 6.13 1.56 7.05 0 12.78-5.73 12.78-12.78 0-3.42-1.33-6.63-3.75-9.05a12.7 12.7 0 00-9.05-3.6zm5.83 15.43c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.72.16-.21.32-.82 1.04-1.01 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.89-1.78-2.21-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.99-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.66 0 1.57 1.14 3.08 1.3 3.29.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.89-.77 2.16-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37z"/></svg>
-          Agendar GRATIS por WhatsApp
+          Agenda cita GRATIS ya mismo
         </a>
         <span class="wa-note">⚡ Respuesta inmediata · ✅ Sin compromiso · 🔒 Cupos limitados</span>
       </div>
-      <div class="hstat">
-        <span>🩺 <b>60 años</b> de experiencia</span>
-        <span>🎗️ Especialistas en <b>dermato-oncología</b></span>
-      </div>
     </div>
     <div class="hero-img">
-      <img src="images/especialista.jpg" alt="Especialista en dermatología del CDCC">
-      <div class="hero-badge">Consulta GRATIS<small>Solo en septiembre</small></div>
+      <img src="images/hero.jpg" alt="Dermatólogo examinando un lunar en la piel de un paciente">
+      <div class="hero-badge">Revísate esos lunares y manchas</div>
     </div>
+  </div>
+</section>
+
+<!-- ESTADÍSTICAS -->
+<section style="background:var(--gray)">
+  <div class="wrap center">
+    <span class="eyebrow">¿Sabías que…?</span>
+    <h2 class="sec-title">El clima está cambiando; el riesgo también</h2>
+    <p class="sec-sub">La degradación de la capa de ozono, las olas de calor y la radiación ultravioleta (UV) extrema han acelerado los diagnósticos de cáncer de piel a nivel mundial.</p>
+    <div class="stats">
+      <div class="stat"><b>+1.5 millones</b><p>de casos de cáncer de piel (melanoma y no-melanoma) se diagnostican cada año en el mundo.</p></div>
+      <div class="stat"><b>1 de cada 5</b><p>personas desarrollará cáncer de piel en su vida. El daño acumulativo de la radiación UV es el principal factor de riesgo.</p></div>
+      <div class="stat"><b>99%</b><p>de supervivencia a 5 años en melanoma detectado a tiempo. La clave no es el pánico, es el diagnóstico oportuno.</p></div>
+      <div class="stat"><b>☀️ +UV</b><p>El aumento de las temperaturas incrementa la exposición al sol y amplifica el daño celular por radiación UV en la piel.</p></div>
+    </div>
+    <p class="stats-ref">Fuente: World Cancer Research Fund — líder en prevención y control del cáncer a nivel mundial.</p>
   </div>
 </section>
 
@@ -237,13 +256,14 @@ fbq('track','PageView');
     <div class="offer">
       <div class="offer-in">
         <div>
-          <span class="flag">PROMOCIÓN DE SEPTIEMBRE</span>
-          <h2>Consulta dermatológica de evaluación</h2>
-          <div class="free"><s>$50</s> GRATIS</div>
+          <span class="flag">Detecta a tiempo el cáncer de piel</span>
+          <h2>Consulta dermatológica GRATIS para revisar tus lunares y manchas</h2>
+          <div class="free">Antes <s>$50</s> · AHORA: GRATIS</div>
+          <h3 style="color:#fff;margin:18px 0 4px;font-size:1.05rem">¿Qué incluye tu evaluación preventiva?</h3>
           <ul class="incl">
-            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Consulta de evaluación con dermatólogo — <b>sin costo</b></li>
-            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> Si el especialista lo considera necesario: <b>50% de descuento</b> en la toma de biopsia</li>
-            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> <b>50% de descuento</b> en el estudio histopatológico</li>
+            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> <b>Consulta de evaluación inicial sin costo:</b> diagnóstico visual y dermatoscópico de manchas o lunares sospechosos.</li>
+            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> <b>50% OFF en toma de biopsia:</b> si el dermato-oncólogo detecta alguna anomalía que requiera análisis profundo.</li>
+            <li><span class="ck"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></span> <b>50% OFF en estudio histopatológico:</b> análisis de laboratorio para confirmación diagnóstica inmediata.</li>
           </ul>
           <div class="urg">📅 Válida del 1 al 30 de septiembre · Cupos limitados</div>
           <div class="reassure">✅ <b>Sin cobros sorpresa:</b> la consulta es 100% gratis. Si se necesita biopsia, te informamos el costo (ya con descuento) <b>antes</b> de proceder — tú decides.</div>
@@ -266,11 +286,11 @@ fbq('track','PageView');
   <div class="wrap split">
     <div class="img-col"><img src="images/equipo.jpg" alt="Equipo médico especialista del CDCC"></div>
     <div>
-      <span class="eyebrow">Por qué CDCC</span>
+      <span class="eyebrow">¿Por qué con nosotros?</span>
       <h2 class="sec-title">Especialistas en dermato-oncología, con 60 años de respaldo</h2>
       <ul class="feat">
         <li><span class="n">✓</span><div><h3>60 años de experiencia</h3><p>Diagnóstico de alta precisión, con el respaldo de seis décadas cuidando la piel.</p></div></li>
-        <li><span class="n">✓</span><div><h3>Especialistas en dermato-oncología</h3><p>Un equipo enfocado en la detección y el manejo del cáncer de piel.</p></div></li>
+        <li><span class="n">✓</span><div><h3>Especialistas en dermato-oncología</h3><p>Los doctores Enrique Hernández-Pérez y José Enrique Hernández-Pérez, enfocados en la detección y el manejo del cáncer de piel.</p></div></li>
         <li><span class="n">✓</span><div><h3>Atención integral, ética y humana</h3><p>Te acompañamos con calma y claridad desde el primer minuto, sin presión.</p></div></li>
         <li><span class="n">✓</span><div><h3>Alivio económico</h3><p>Consulta gratis y 50% de descuento en biopsia y estudios de laboratorio.</p></div></li>
       </ul>
@@ -297,8 +317,8 @@ fbq('track','PageView');
 <!-- VIDEO TESTIMONIAL -->
 <section style="background:var(--gray)">
   <div class="wrap center">
-    <span class="eyebrow">Historias reales</span>
-    <h2 class="sec-title">Lo que dicen nuestros pacientes</h2>
+    <span class="eyebrow">Confianza comprobada</span>
+    <h2 class="sec-title">La tranquilidad de actuar a tiempo: historias de nuestros pacientes</h2>
     <p class="sec-sub">Un testimonio vale más que mil palabras.</p>
     <div class="video-box">
       <!-- Cuando envíes el video, reemplaza este bloque por:
@@ -326,8 +346,8 @@ fbq('track','PageView');
 <section style="background:var(--mint)">
   <div class="wrap center">
     <span class="eyebrow">¿Cuándo revisarte?</span>
-    <h2 class="sec-title">Vigila estas señales — regla ABCDE</h2>
-    <p class="sec-sub">Si un lunar o mancha cumple una o más, es momento de tu evaluación gratuita.</p>
+    <h2 class="sec-title">Conoce las señales de alerta: la regla ABCDE del cáncer de piel</h2>
+    <p class="sec-sub">Si notas alguna de estas características en tus lunares o manchas, es momento de agendar tu evaluación:</p>
     <div class="abcde">
       <div class="ab">
         <div class="ab-ex"><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M42 19c13 0 20 9 20 22 0 14-10 19-22 19-11 0-18-6-19-17-1-14 7-24 21-24z" fill="#6f4327"/><path d="M42 19c13 0 20 9 20 22 0 9-4 14-10 17-3-6-4-13-3-21 1-7 0-13-7-18z" fill="#5a3420" opacity=".55"/></svg><span class="ab-letter">A</span></div>
@@ -364,9 +384,9 @@ fbq('track','PageView');
 <section>
   <div class="wrap">
     <div class="urg-band">
-      <span class="eyebrow">Solo durante septiembre</span>
-      <h2>La consulta gratuita termina el 30 de septiembre</h2>
-      <p>Abrimos un número limitado de cupos por semana para dar una atención de calidad. No dejes pasar tu evaluación.</p>
+      <span class="eyebrow">No dejes tu salud para después</span>
+      <h2>El diagnóstico a tiempo salva vidas</h2>
+      <p>Los cupos para la consulta gratuita de septiembre son limitados para garantizar una atención detallada y personalizada por nuestros dermato-oncólogos.</p>
       <div class="countdown" id="countdown">
         <div class="cd"><b id="cd-d">00</b><small>días</small></div>
         <div class="cd"><b id="cd-h">00</b><small>horas</small></div>
@@ -415,7 +435,8 @@ fbq('track','PageView');
 <footer>
   <div class="wrap">
     <img src="images/cdcc-logo.png" class="foot-logo" alt="CDCC — Centro de Dermatología y Cirugía Cosmética">
-    <div style="margin-top:12px">Dirección, Ciudad · Lun a Sáb · WhatsApp: <a href="https://wa.me/50360448696" target="_blank" rel="noopener">+503 6044-8696</a></div>
+    <div style="margin-top:12px">Visítanos en: 📍 Plaza Villavicencio · 📍 Soho Cascadas</div>
+    <div style="margin-top:6px">WhatsApp: <a href="https://wa.me/50360448696" target="_blank" rel="noopener">+503 6044-8696</a></div>
     <p class="legal">© 2026 CDCC — Centro de Dermatología y Cirugía Cosmética. Promoción válida del 1 al 30 de septiembre, exclusivamente para evaluaciones relacionadas con lesiones sospechosas de cáncer de piel y sujeta a disponibilidad de cupos. Esta página es de carácter informativo y no sustituye una valoración médica presencial. Los resultados y la necesidad de estudios se determinan en la consulta.</p>
   </div>
 </footer>
