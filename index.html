@@ -190,7 +190,11 @@ fbq('track','PageView');
 
   footer{padding:36px 0 120px;color:var(--muted);font-size:.86rem;border-top:1px solid var(--line);margin-top:52px;text-align:center}
   footer a{color:var(--blue-d)}
-  .legal{font-size:.76rem;margin-top:12px;color:#98a0a7;max-width:60ch;margin-left:auto;margin-right:auto}
+  .foot-loc{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 40px;margin-top:8px}
+  .foot-loc .loc b{display:block;color:var(--ink)}
+  .foot-loc .loc span{font-size:.85rem}
+  .foot-loc .loc a{font-weight:600;text-decoration:underline}
+  .legal{font-size:.76rem;margin-top:14px;color:#98a0a7;max-width:60ch;margin-left:auto;margin-right:auto}
 
   .wa-fab{position:fixed;right:16px;bottom:16px;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 26px rgba(37,211,102,.45);z-index:60;animation:pulse 2.4s infinite}
   .wa-fab svg{width:34px;height:34px;fill:#fff}
@@ -435,7 +439,17 @@ fbq('track','PageView');
 <footer>
   <div class="wrap">
     <img src="images/cdcc-logo.png" class="foot-logo" alt="CDCC — Centro de Dermatología y Cirugía Cosmética">
-    <div style="margin-top:12px">Visítanos en: 📍 Plaza Villavicencio · 📍 Soho Cascadas</div>
+    <div style="margin-top:14px;font-weight:600">Visítanos en:</div>
+    <div class="foot-loc">
+      <div class="loc">
+        <b>📍 Plaza Villavicencio</b>
+        <span><a href="https://www.google.com/maps/search/?api=1&amp;query=Plaza%20Villavicencio%2C%20San%20Salvador%2C%20El%20Salvador" target="_blank" rel="noopener">Google Maps</a> · <a href="https://waze.com/ul?q=Plaza%20Villavicencio%20San%20Salvador%20El%20Salvador&amp;navigate=yes" target="_blank" rel="noopener">Waze</a></span>
+      </div>
+      <div class="loc">
+        <b>📍 Soho Cascadas</b>
+        <span><a href="https://www.google.com/maps/search/?api=1&amp;query=Soho%20Cascadas%2C%20Santa%20Tecla%2C%20El%20Salvador" target="_blank" rel="noopener">Google Maps</a> · <a href="https://waze.com/ul?q=Soho%20Cascadas%20El%20Salvador&amp;navigate=yes" target="_blank" rel="noopener">Waze</a></span>
+      </div>
+    </div>
     <div style="margin-top:6px">WhatsApp: <a href="https://wa.me/50360448696" target="_blank" rel="noopener">+503 6044-8696</a></div>
     <p class="legal">© 2026 CDCC — Centro de Dermatología y Cirugía Cosmética. Promoción válida del 1 al 30 de septiembre, exclusivamente para evaluaciones relacionadas con lesiones sospechosas de cáncer de piel y sujeta a disponibilidad de cupos. Esta página es de carácter informativo y no sustituye una valoración médica presencial. Los resultados y la necesidad de estudios se determinan en la consulta.</p>
   </div>
